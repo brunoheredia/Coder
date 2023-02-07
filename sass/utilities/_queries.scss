@@ -1,0 +1,90 @@
+@media screen and (max-width:576px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        main{
+            &{
+                display: flex;
+                flex-direction: column;
+            }
+            .videos__iframe{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        .contenedor__padre_biografia{
+            display: flex;
+            flex-direction: column;
+        }
+        .seccion__discografia{
+            width:100%;
+            text-align: center;
+
+        }
+        .album{
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            ol{
+                li{
+                    font-size: 15px;
+                }
+            }
+        }
+        .contenedor__padre_marca{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}
+@media screen and (max-width:768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        main{
+            &{
+                display: flex;
+                flex-direction: column;
+            }
+            .videos__iframe{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        footer{
+            display: flex;
+            flex-direction: row;
+        }
+        .contenedor__padre_biografia{
+            display: flex;
+            flex-direction: column;
+        }
+        .seccion__discografia{
+            width:100%;
+            text-align: center;
+
+        }
+        .album{
+            width: 180px;
+            display: flex;
+            flex-direction: column;
+            ol{
+                li{
+                    font-size: 25px;
+                }
+            }
+        }
+        .contenedor__padre_marca{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+}
