@@ -1,4 +1,4 @@
-/*colores*/
+/*Imports*/ /*colores*/
 /*texto*/
 * {
   margin: 0;
@@ -6,11 +6,13 @@
   box-sizing: border-box;
 }
 
+/*Disposicion de elementos en body*/
 body {
   width: 100%;
   font-family: "Oswald", sans-serif;
 }
 
+/*Disposicion de elementos en header*/
 header {
   background-color: orangered;
 }
@@ -20,6 +22,7 @@ header nav {
 
 /*colores*/
 /*texto*/
+/*Dispocision y personalizacion de elementos en index*/
 main {
   width: 100%;
   background-color: burlywood;
@@ -48,13 +51,24 @@ main .videos__iframe {
   justify-content: space-around;
   margin: 20px 0 30px 0;
 }
-
-h1 {
-  font-weight: bold;
-  margin: 20px 0 20px 0;
-  font-family: "Orbitron", sans-serif;
+main .small__main {
+  text-align: center;
+  font-style: italic;
+  margin: 20px;
 }
 
+/*Estructura principal index*/
+.contenedor__lorem__main {
+  margin: 3rem;
+}
+
+.contenedor__img__main {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+/*Estructura principal seccion biografia*/
 .contenedor__padre_biografia {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -67,41 +81,9 @@ h1 {
 
 .contenedor__img_biografia {
   margin: 3rem;
-  text-align: center;
 }
 
-a img {
-  width: 8rem;
-  margin: 10px 10px 10px 20px;
-}
-
-li {
-  font-weight: bold;
-  margin: 10px;
-}
-
-.contenedor__lorem__main {
-  margin: 3rem;
-}
-
-.contenedor__img__main {
-  display: flex;
-  justify-content: center;
-  margin: 3rem;
-}
-
-.img__main {
-  width: 80%;
-  border-radius: 10px;
-  margin: 50px 0 0 0;
-}
-
-.small__main {
-  text-align: center;
-  font-style: italic;
-  margin: 20px;
-}
-
+/*Estructura principal seccion discografia*/
 .contenedor__discografia {
   display: flex;
   flex-direction: column;
@@ -120,6 +102,17 @@ li {
   margin: 20px 0 20px 0;
 }
 
+a img {
+  width: 8rem;
+  margin: 10px 10px 10px 20px;
+}
+
+li {
+  font-weight: bold;
+  margin: 10px;
+}
+
+/*Estructura principal seccion marca*/
 .contenedor__padre_marca {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -143,6 +136,20 @@ li {
   margin: 30px;
 }
 
+h1 {
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+.img__main {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 10px;
+  margin: 50px 0 0 0;
+}
+
+/*Disposicion de elementos en footer*/
 footer {
   width: 100%;
   background-color: orangered;
@@ -151,18 +158,18 @@ footer {
 }
 footer .icons__footer {
   display: flex;
-  flex-direction: column;
   margin: 30px 0 10px 20px;
 }
 footer .small__footer {
-  margin: 30px 0 0 135px;
+  margin: 30px 0 0 0;
   font-size: 20px;
 }
 footer img {
   width: 10rem;
-  margin: 30px 20px 0 0;
+  margin: 30px 20px 30px 0;
 }
 
+/*Mediaqueries vista mobile*/
 @media screen and (max-width: 576px) {
   body {
     display: flex;
@@ -193,6 +200,14 @@ footer img {
     width: 120px;
     display: flex;
     flex-direction: column;
+    margin: 0;
+  }
+  body .album .container {
+    width: 60%;
+  }
+  body .album ol {
+    margin: 7px;
+    padding: 7px;
   }
   body .album ol li {
     font-size: 15px;
@@ -202,6 +217,7 @@ footer img {
     flex-direction: column;
   }
 }
+/*Media queries vista tablet*/
 @media screen and (max-width: 768px) {
   body {
     display: flex;
@@ -228,13 +244,18 @@ footer img {
     width: 100%;
     text-align: center;
   }
-  body .album {
-    width: 180px;
-    display: flex;
-    flex-direction: column;
+  body .album h2 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+  }
+  body .album ol {
+    margin: 7px;
+    padding: 7px;
+    text-align: start;
   }
   body .album ol li {
-    font-size: 25px;
+    font-size: 20px;
+    text-align: start;
   }
   body .contenedor__padre_marca {
     display: flex;

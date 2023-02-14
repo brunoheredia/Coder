@@ -1,0 +1,5 @@
+@mixin contenedores($texto)  {
+    margin: 3rem;
+    text-align: $texto;
+}
+

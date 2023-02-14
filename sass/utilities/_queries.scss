@@ -1,90 +1,119 @@
+/*Mediaqueries vista mobile*/
 @media screen and (max-width:576px) {
-    body{
+    body {
         display: flex;
         flex-direction: column;
-        main{
-            &{
+
+        main {
+            & {
                 display: flex;
                 flex-direction: column;
             }
-            .videos__iframe{
+
+            .videos__iframe {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
             }
         }
-        footer{
+
+        footer {
             display: flex;
             flex-direction: row;
         }
-        .contenedor__padre_biografia{
+
+        .contenedor__padre_biografia {
             display: flex;
             flex-direction: column;
         }
-        .seccion__discografia{
-            width:100%;
+
+        .seccion__discografia {
+            width: 100%;
             text-align: center;
 
         }
-        .album{
+
+        .album {
             width: 120px;
             display: flex;
             flex-direction: column;
-            ol{
-                li{
+            margin: 0;
+            
+            .container{
+                width: 60%;
+            }
+            ol {
+                margin: 7px;
+                padding: 7px;
+                li {
                     font-size: 15px;
                 }
             }
         }
-        .contenedor__padre_marca{
+
+        .contenedor__padre_marca {
             display: flex;
             flex-direction: column;
         }
-        
+
+
     }
 }
+/*Media queries vista tablet*/
 @media screen and (max-width:768px) {
-    body{
+    body {
         display: flex;
         flex-direction: column;
-        main{
-            &{
+
+        main {
+            & {
                 display: flex;
                 flex-direction: column;
             }
-            .videos__iframe{
+
+            .videos__iframe {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
         }
-        footer{
+
+        footer {
             display: flex;
             flex-direction: row;
         }
-        .contenedor__padre_biografia{
+
+        .contenedor__padre_biografia {
             display: flex;
             flex-direction: column;
         }
-        .seccion__discografia{
-            width:100%;
+
+        .seccion__discografia {
+            width: 100%;
             text-align: center;
 
         }
-        .album{
-            width: 180px;
-            display: flex;
-            flex-direction: column;
+
+        .album {
+            h2{
+                text-align: center;
+                margin: 10px 0 10px 0;
+            }
             ol{
+                margin: 7px;
+                padding: 7px;
+                text-align: start;
                 li{
-                    font-size: 25px;
+                    font-size: 20px;
+                    text-align: start;
                 }
             }
         }
-        .contenedor__padre_marca{
+
+        .contenedor__padre_marca {
             display: flex;
             flex-direction: column;
         }
-        
+
     }
 }
